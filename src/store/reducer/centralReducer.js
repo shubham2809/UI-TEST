@@ -55,22 +55,22 @@ const reducer = ( state = initialState, action ) => {
             const allUserArray = [...state.userDetails];
             const {name , email , city , phone , website , companyName} = action.userInputData;
             
-            if(name !== null){
+            if(name !== null && name !== ""){
                 allUserArray[index].name = name;
             }
-            if(email !== null){
+            if(email !== null && email !== ""){
                 allUserArray[index].email = email;
             }
-            if(city !== null){
+            if(city !== null && city !== ""){
                 allUserArray[index].address.city = city;
             }
-            if(phone !== null){
+            if(phone !== null && phone !== ""){
                 allUserArray[index].phone = phone;
             }
-            if(website !== null){
+            if(website !== null && website !== ""){
                 allUserArray[index].website = website;
             }
-            if(companyName !== null){
+            if(companyName !== null && companyName !== ""){
                 allUserArray[index].company.name = companyName;
             }
             return {
