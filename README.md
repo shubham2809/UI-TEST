@@ -21,6 +21,10 @@ What things you need to install the software and how to install them
 
 In the project directory, you can run:
 
+### `npm install`
+
+Installs all Node Modules ( Prod and Dev ) dependencies.
+
 ### `npm start`
 
 Runs the app in the development mode.<br>
