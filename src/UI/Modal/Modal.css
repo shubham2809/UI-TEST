@@ -1,7 +1,7 @@
 .Modal {
     position: fixed;
     z-index: 500;
-    background: linear-gradient(to left, #c9d6ff, #e2e2e2);
+    background: linear-gradient(to right bottom, rgba(67, 198, 172, 0.6), rgba(248, 255, 174, 0.6));
     width: 70%;
     box-shadow: 1px 1px 1px black;
     padding: 16px;

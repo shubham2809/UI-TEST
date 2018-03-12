@@ -22,19 +22,3 @@
         overflow: hidden;
     }
 }
-
-@media screen and (max-width: 900px) {
-    .header {
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    .header {
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-    }
-}
