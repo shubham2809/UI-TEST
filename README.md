@@ -54,6 +54,30 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+
+
+## HTTP Request
+
+To make RESTfull service call , [axios]https://github.com/axios/axios has been used in this project
+
+  **USAGE**
+
+An axios instance is created with base URL
+
+```
+├── src
+|  ├── axiosFirebase.js
+```
+
+```
+import axios from 'axios';
+
+const instance = axios.create({
+    baseURL: 'https://uitest-73c93.firebaseio.com/'
+});
+
+export default instance;
+```
 ## Folder Structure
 
 After creation, your project should look like this:
@@ -84,29 +108,6 @@ After creation, your project should look like this:
 |  ├── registerServiceWorker.js
 |  ├── store
 |  └── UI
-```
-
-## HTTP Request
-
-To make RESTfull service call , [axios]https://github.com/axios/axios has been used in this project
-
-  **USAGE**
-
-An axios instance is created with base URL
-
-```
-├── src
-|  ├── axiosFirebase.js
-```
-
-```
-import axios from 'axios';
-
-const instance = axios.create({
-    baseURL: 'https://uitest-73c93.firebaseio.com/'
-});
-
-export default instance;
 ```
 
 For the project to build, **these files must exist with exact filenames**:
