@@ -1,0 +1,24 @@
+.navbar-nav>li {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn {
+  transition: all .2s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px)
+}
+
+/* .btn--white {
+  background-color: #FFF;
+  color: #777;
+} */

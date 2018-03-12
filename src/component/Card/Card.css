@@ -1,0 +1,26 @@
+.card {
+  color: #444;
+  border: 1px solid #999;
+  border-radius: 10px;
+  background: none;
+  text-align: center;
+  margin-top: 5%;
+  padding-top: 10px;
+  float: left;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+.card:active {
+    transform: translateY(-1px)
+  }
+
+
+.card-green {
+  border-top: 4px solid #16a085;
+}
+
+
