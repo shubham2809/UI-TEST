@@ -5,20 +5,12 @@
 }
 
 .header {
-    height: 95vh;
+    min-height: 100vh;
     background-image: linear-gradient(to right bottom, rgba(67, 198, 172, 0.6), rgba(248, 255, 174, 0.6)), url(./rsz_2background.png);
-    background-size: top;
+    background-size: contain ,30% auto;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     /* https://bennettfeely.com/clippy/ */
     /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%); */
-}
-
-@media screen and (max-width: 600px) {
-    .header {
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-    }
 }
