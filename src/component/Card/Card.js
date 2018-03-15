@@ -2,17 +2,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, {Component} from 'react';
 
 import Carditem from './CardItem';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import Layout from './../../hoc/layout/Layout';
 import * as actions from './../../store/actions/index';
 import ErrorBoundry from './../../ErrorBoundry/ErrorBoundry';
 import Spinner from './../../UI/Spinner/Spinner';
+
+var divStyle = { textAlign: 'center' }
 
 class card extends Component {
 
   componentDidMount() {
       this.props.onfetchDetails();
   }
+
+
+
 
   render() {
     const usersInfo = [...this.props.users];
@@ -40,7 +45,7 @@ class card extends Component {
 
     return (
       <Layout>
-        
+            <p style={divStyle}>Double click on card to edit it</p>
             <div className="row">
             <ErrorBoundry>
                 {Cards}
